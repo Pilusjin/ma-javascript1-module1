@@ -48,12 +48,12 @@ resultsContainer.style.background = "yellow"
 
 // Question 7
 
-function dildo(list) {
+function Animal(list) {
     for(let i =0; i < list.length; i++) {
         console.log(list[i].name);
     }
 }
-dildo(cats)
+Animal(cats)
 
 // Question 8
 
