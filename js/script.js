@@ -60,7 +60,8 @@ dildo(cats)
 function creatsCats (cats) {
     let html = "";
     for ( let i = 0; i < creatsCats.length; i++){
-        let catAge = "Age";
+
+        let catAge = "Age unknown";
         if (creatsCats[i].age) {
             catAge = creatsCats[i].age;
         }
@@ -74,4 +75,5 @@ function creatsCats (cats) {
 }
 
 const newHTML = creatsCats(cats);
-const 
+const catsContainer =document.querySelector(".cat-container");
+catsContainer.innerHTML = newHTML;
