@@ -61,16 +61,15 @@ function creatsCats (cats) {
     let html = "";
     for ( let i = 0; i < creatsCats.length; i++){
 
-        let catAge = "Age unknown";
-        if (creatsCats[i].age) {
-            catAge = creatsCats[i].age;
-        }
-        html += `<div class="cats">
-                <h5${creatsCats[i].name}</h5>
-                <p>${creatsCats[i].age}</p>
-                </div>`;
+    let catAge = "Age unknown";
+    if (creatsCats[i].age) {
+    catAge = creatsCats[i].age;
     }
-
+    html += `<div class="cats">
+    <h5${creatsCats[i].name}</h5>
+    <p>${creatsCats[i].age}</p>
+    </div>`;
+}
     return html;
 }
 
